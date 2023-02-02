@@ -19,7 +19,7 @@ const App = () => {
     if (Array.isArray(res)) setData(res);
   }
 
-  const debouncedRef = useRef(debounce(handler, 1000))
+  const debouncedRef = useRef(debounce(handler, 500))
 
   useEffect(() => {
     debouncedRef.current(username);
